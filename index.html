@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ساعة رجالية كلاسيكية — أناقة خالدة لكل لحظة</title>
+  <meta name="description" content="ساعة رجالية بإطار ذهبي وميناء أسود وحزام جلد طبيعي. الدفع عند الاستلام والتوصيل لكل الولايات.">
+  <meta property="og:image" content="assets/watch.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/frames/001.webp">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- الشريط العلوي -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a href="#" class="brand">MEN’S WATCH</a>
+      <button type="button" class="btn btn--dark btn--sm" data-go-order>اطلب الآن</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ── مشهد التفكيك (إطاراً بإطار حسب السكرول) ── -->
+    <section class="scene" id="scene" aria-label="تفكيك الساعة">
+      <div class="scene__sticky">
+        <canvas class="scene__canvas" id="sceneCanvas" aria-hidden="true"></canvas>
+        <div class="scene__loader"><div id="sceneLoader"></div></div>
+
+        <!-- طبقة التسميات بمقاس الإطار المرسوم -->
+        <div class="scene__box" id="sceneBox" dir="ltr"></div>
+
+        <div class="scene__intro">
+          <div class="fx" data-fade="-1,0,0.05,0.12">
+            <p class="eyebrow eyebrow--latin">MEN’S WATCH</p>
+            <h1 class="display display--xl">أناقة خالدة<br><span class="gold">لكل لحظة</span></h1>
+            <p class="intro__note">الدفع عند الاستلام · توصيل لكل الولايات</p>
+          </div>
+        </div>
+
+        <div class="scene__middle">
+          <div class="fx" data-fade="0.16,0.22,0.4,0.46">
+            <div class="middle__card">
+              <p class="eyebrow">من الداخل</p>
+              <h2 class="display display--lg">صُنعت قطعةً قطعة</h2>
+              <p class="middle__text">كل جزء فيها مصمم ليدوم: من الزجاج الكريستالي حتى حلقة العزل الخلفية.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene__outro">
+          <div class="fx" data-fade="0.84,0.92">
+            <h2 class="display display--lg">ما بداخلها يصنع الفرق</h2>
+            <a href="#order" class="btn btn--dark" data-go-order>اطلبها الآن <span class="arrow">←</span></a>
+          </div>
+        </div>
+
+        <div class="scene__hint fx" data-fade="-1,0,0.01,0.05">
+          <span>مرّر للأسفل</span>
+          <span class="mouse"><span></span></span>
+        </div>
+
+        <div class="scene__progress"><div></div></div>
+      </div>
+    </section>
+
+    <!-- ── التصميم ── -->
+    <section class="story">
+      <div class="story__media">
+        <img src="assets/lifestyle.webp" alt="ساعة رجالية بإطار ذهبي وحزام جلدي أسود" loading="lazy" width="1024" height="1536">
+      </div>
+      <div>
+        <p class="eyebrow eyebrow--muted">التصميم</p>
+        <h2 class="display display--lg">بساطة تلفت الأنظار</h2>
+        <p class="story__text">ميناء أسود بلمسة شمسية، عقارب ومؤشرات ذهبية رفيعة، وهيكل ذهبي مصقول على حزام جلدي أسود. ساعة تناسب البدلة الرسمية كما تناسب إطلالتك اليومية.</p>
+        <div class="features">
+          <div class="feature">
+            <span class="feature__icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <div><p class="feature__title">هيكل متين</p><p class="feature__sub">فولاذ مقاوم للصدأ</p></div>
+          </div>
+          <div class="feature">
+            <span class="feature__icon"><svg viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></svg></span>
+            <div><p class="feature__title">حزام جلد طبيعي</p><p class="feature__sub">راحة وأناقة</p></div>
+          </div>
+          <div class="feature">
+            <span class="feature__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div><p class="feature__title">حركة كوارتز</p><p class="feature__sub">وقت دقيق</p></div>
+          </div>
+          <div class="feature">
+            <span class="feature__icon"><svg viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5S5 13 5 15a7 7 0 0 0 7 7z"/></svg></span>
+            <div><p class="feature__title">مقاومة للماء</p><p class="feature__sub">حتى 3 ATM</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── الطلب ── -->
+    <section class="order" id="order">
+      <div class="order__inner">
+        <div class="order__aside">
+          <p class="eyebrow eyebrow--light">اطلب الآن</p>
+          <h2 class="display display--lg">ساعة رجالية كلاسيكية</h2>
+          <div class="order__photo"><img src="assets/watch.webp" alt="" loading="lazy" width="1254" height="1254"></div>
+          <ul class="perks">
+            <li><svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>الدفع عند الاستلام</li>
+            <li><svg viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg>توصيل لكل الولايات</li>
+            <li><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>نتصل بك لتأكيد الطلب</li>
+          </ul>
+        </div>
+
+        <form class="form" id="orderForm" novalidate>
+          <p class="form__notice">الطلب غير متاح حالياً، عد قريباً.</p>
+          <div class="form__grid">
+            <label class="field"><span>الاسم الكامل</span><input name="name" required maxlength="100" autocomplete="name"></label>
+            <label class="field"><span>رقم الهاتف</span><input name="phone" required dir="ltr" inputmode="tel" autocomplete="tel" maxlength="10" placeholder="05 / 06 / 07"></label>
+            <label class="field"><span>الولاية</span><select name="state" required id="wilaya"><option value="">اختر الولاية</option></select></label>
+            <label class="field"><span>البلدية</span><input name="city" required maxlength="100"></label>
+          </div>
+          <div class="delivery" role="radiogroup" aria-label="نوع التوصيل">
+            <button type="button" class="delivery__opt is-active" data-delivery="home">إلى المنزل</button>
+            <button type="button" class="delivery__opt" data-delivery="office">إلى المكتب</button>
+          </div>
+          <label class="field" id="addressField"><span>العنوان</span><input name="address" maxlength="300" autocomplete="street-address"></label>
+          <div class="qty">
+            <span>الكمية</span>
+            <div class="qty__ctl">
+              <button type="button" data-qty="-1" aria-label="إنقاص">−</button>
+              <output id="qty">1</output>
+              <button type="button" data-qty="1" aria-label="زيادة">+</button>
+            </div>
+          </div>
+          <button type="submit" class="btn btn--gold btn--block" disabled>تأكيد الطلب — الدفع عند الاستلام</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">MEN’S WATCH</footer>
+
+  <!-- شريط الطلب الثابت (الهاتف) -->
+  <div class="mobilebar" id="mobileBar">
+    <p>الدفع عند الاستلام</p>
+    <button type="button" class="btn btn--dark" data-go-order>اطلب الآن</button>
+  </div>
+
+  <script src="js/wilayas.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
